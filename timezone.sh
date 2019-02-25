@@ -1,18 +1,25 @@
 #!/bin/bash
 # ig20180122 - displays meeting options in other time zones
 # set the following variable to the start and end of your working day
-date
-myday="1 24" # start and end time, with one space
+#date +%R
+#myday="0 23" # start and end time, with one space
+myday="8 17"
+
 # set the local TZ
 myplace='America/Los_Angeles'
+
 # set the most common places
 place[1]='America/New_York'
-place[2]='Asia/Tokyo'
-place[3]='Asia/Bangkok'
+place[3]='Asia/Tokyo'
+place[2]='Asia/Bangkok'
+
 # add cities using place[5], etc.
 # set the date format for search
 dfmt="%m-%d" # date format for meeting date
 hfmt="+%B %e, %Y" # date format for the header
+
+
+
 # no need to change onwards
 format1="%-10s " # Increase if your cities are large
 format2="%02d "
